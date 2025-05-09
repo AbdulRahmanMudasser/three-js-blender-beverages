@@ -1,6 +1,6 @@
 # 🥤 Pop & Roll - 3D Beverage Visualization Platform
 
-![Demo Banner](./assets/Pop%20%26%20Roll.jpeg)
+![Demo Banner](./assets/website.jpeg)
 
 A cutting-edge web platform showcasing interactive 3D beverage models with brand-focused packaging design. Built with Three.js and Blender.
 
