@@ -171,6 +171,7 @@ body {
 .asset-list {
     columns: 2;
     margin: 1rem 0;
+    margin-top: 20px;
 }
 
 .reference-links {
@@ -256,6 +257,7 @@ body {
 }
 
 .tech-stack {
+    margin-top: 2rem; /* Added spacing */
     position: relative;
     padding: 2rem;
     background: rgba(255, 255, 255, 0.05);
@@ -282,9 +284,11 @@ body {
 }
 
 /* Originality Section */
+/* In #originality .content-card */
 #originality .content-card {
-    background: rgba(0, 180, 216, 0.05);
-    border: 1px solid rgba(0, 180, 216, 0.2);
+    background: rgba(0, 180, 216, 0.1);  /* Increased opacity */
+    border: 1px solid rgba(0, 180, 216, 0.3);
+    color: #ffffff; /* Explicit white text */
     backdrop-filter: blur(10px);
 }
 
@@ -406,7 +410,7 @@ body {
 .brand-header {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: #0e1f14; /* Deep soda green */
+  background-color: black /* Deep soda green */
   color: #fff;
 }
 
@@ -420,9 +424,41 @@ body {
 
 .brand-tagline {
   font-size: 1.2rem;
-  color: #c0ff91; /* Lemon-lime accent */
+  color: #228be6; /* Lemon-lime accent */
   margin-top: 0.5rem;
   font-weight: 400;
   letter-spacing: 1px;
 }
 
+/* Folder Structure Styles */
+.folder-structure {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.folder-structure h3 {
+    color: #00b4d8;
+    margin-bottom: 1.2rem;
+}
+
+.folder-structure dl {
+    display: grid;
+    gap: 1rem;
+}
+
+.folder-structure dt {
+    color: #90e0ef;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.folder-structure dd {
+    color: #cccccc;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    font-size: 0.95em;
+}
