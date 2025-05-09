@@ -1,3 +1,4 @@
+/* styles/main.css */
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
@@ -12,6 +13,7 @@
 body {
     background: #1a1a1a;
     color: #ffffff;
+    padding-top: 100px;
 }
 
 /* Navigation */
@@ -43,15 +45,32 @@ body {
     gap: 2rem;
 }
 
-.nav-links a {
+.nav-link {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.2s;
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.nav-link.active {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link:hover {
     color: #00b4d8;
+}
+
+/* Content Sections */
+.content-section {
+    display: none;
+    padding: 2rem 5%;
+    min-height: 70vh;
+}
+
+.content-section.active {
+    display: block;
 }
 
 /* Hero Section */
@@ -137,52 +156,19 @@ body {
     font-size: 1.2rem;
 }
 
-/* About Section */
-.about {
-    padding: 4rem 5%;
-    background: #252525;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 2rem;
-    background: #000000;
-    margin-top: auto;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .model-selector {
-        grid-template-columns: 1fr;
-    }
-    
-    .hero h2 {
-        font-size: 2rem;
-    }
-}
-/* styles/main.css */
-/* Add these new styles */
-.content-section {
-    display: none;
-    padding: 2rem 5%;
-    min-height: 70vh;
-}
-
-.content-section.active {
-    display: block;
-}
-
+/* Content Cards */
 .content-card {
     background: white;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     margin: 2rem auto;
+    color: #333;
 }
 
-.tech-stack ul, .asset-list {
+.tech-stack ul,
+.asset-list {
     columns: 2;
     margin: 1rem 0;
 }
@@ -198,6 +184,7 @@ footer {
     text-decoration: none;
 }
 
+/* Footer */
 .site-map {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -223,13 +210,219 @@ footer {
     color: #228be6;
 }
 
-/* Update existing nav styles */
-.nav-link {
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: all 0.2s;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .model-selector {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .site-map {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-stack ul,
+    .asset-list {
+        columns: 1;
+    }
 }
 
-.nav-link.active {
-    background: rgba(255,255,255,0.1);
+/* Add these styles to your existing main.css */
+
+/* ====================
+   Section Enhancements
+   ==================== */
+.content-section {
+    padding-top: 6rem;
+    /* Account for fixed navbar */
 }
+
+/* About Section */
+#about .content-card {
+    background: linear-gradient(135deg, #2d3436 0%, #000000 100%);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #00b4d8, #90e0ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tech-stack {
+    position: relative;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.tech-stack h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #00b4d8;
+}
+
+.tech-stack li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tech-stack li:before {
+    content: "▹";
+    color: #00b4d8;
+}
+
+/* Originality Section */
+#originality .content-card {
+    background: rgba(0, 180, 216, 0.05);
+    border: 1px solid rgba(0, 180, 216, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+#originality h2 {
+    font-size: 2.5rem;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+#originality h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #00b4d8;
+}
+
+#originality ul {
+    list-style: none;
+}
+
+#originality li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#originality li:before {
+    content: "✓";
+    color: #00b4d8;
+    position: absolute;
+    left: 0;
+}
+
+/* References Section */
+#references .content-card {
+    background: #0a1929;
+    color: white;
+}
+
+.reference-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.reference-links a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.reference-links a:hover {
+    background: rgba(0, 180, 216, 0.1);
+    transform: translateY(-3px);
+}
+
+.reference-links a:before {
+    content: "🌐";
+    font-size: 1.5rem;
+}
+
+.asset-list li {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Footer Enhancements */
+.site-map {
+    background: #0a1929;
+    padding: 4rem 5%;
+    margin-top: 4rem;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.footer-section a {
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-section a:hover {
+    opacity: 1;
+    color: #00b4d8;
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+    .content-section {
+        padding: 4rem 5%;
+    }
+
+    #about h2,
+    #originality h2 {
+        font-size: 2rem;
+    }
+
+    .tech-stack {
+        padding: 1.5rem;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap');
+
+.brand-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #0e1f14; /* Deep soda green */
+  color: #fff;
+}
+
+.brand-logo {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 3.2rem;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  margin: 0;
+}
+
+.brand-tagline {
+  font-size: 1.2rem;
+  color: #c0ff91; /* Lemon-lime accent */
+  margin-top: 0.5rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+

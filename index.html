@@ -1,6 +1,7 @@
 <!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +12,13 @@
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="brand">
-            <h1>POP & ROLL</h1>
+        <div class="brand-header">
+            <h1 class="brand-logo">Pop & Roll</h1>
+            <p class="brand-tagline">Fresh. Fizzy. Legendary.</p>
         </div>
         <div class="nav-links">
             <a href="#home" class="nav-link active">Home</a>
@@ -25,14 +28,12 @@
         </div>
     </nav>
 
-    <br><br><br><br><br>
-
     <!-- Content Sections -->
     <section id="home" class="content-section active">
         <div class="model-selector">
-            <button class="model-btn active" data-model="model1">DIET SODA</button>
-            <button class="model-btn" data-model="model2">ORIGINAL SODA</button>
-            <button class="model-btn" data-model="model3">LIMITED EDITION</button>
+            <button class="model-btn active" data-model="model1">COLA SODA</button>
+            <button class="model-btn" data-model="model2">ORANGE SODA</button>
+            <button class="model-btn" data-model="model3">LEMON SODA</button>
         </div>
         <div id="canvas-container"></div>
         <div class="controls">
@@ -48,9 +49,9 @@
             <div class="tech-stack">
                 <h3>Technologies Used:</h3>
                 <ul>
-                    <li>Three.js - WebGL framework</li>
-                    <li>Blender - 3D modeling</li>
-                    <li>GLTF format - 3D asset delivery</li>
+                    <li>Three.js - WebGL Framework</li>
+                    <li>Blender - 3D Modeling</li>
+                    <li>GLTF format - 3D Asset Delivery</li>
                 </ul>
             </div>
         </div>
@@ -113,4 +114,5 @@
     <script src="scripts/main.js"></script>
     <script src="scripts/navigation.js"></script>
 </body>
+
 </html>
