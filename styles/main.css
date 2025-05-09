@@ -1,8 +1,5 @@
-/* styles/main.css */
-/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
-/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +13,6 @@ body {
     padding-top: 100px;
 }
 
-/* Navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -62,7 +58,6 @@ body {
     color: #00b4d8;
 }
 
-/* Content Sections */
 .content-section {
     display: none;
     padding: 2rem 5%;
@@ -73,7 +68,6 @@ body {
     display: block;
 }
 
-/* Hero Section */
 .hero {
     padding: 120px 5% 60px;
     text-align: center;
@@ -85,7 +79,6 @@ body {
     margin-bottom: 1rem;
 }
 
-/* Model Viewer */
 .model-viewer {
     padding: 4rem 5%;
     min-height: 80vh;
@@ -127,7 +120,6 @@ body {
     background: #252525;
 }
 
-/* Controls */
 .controls {
     display: flex;
     gap: 1rem;
@@ -156,7 +148,6 @@ body {
     font-size: 1.2rem;
 }
 
-/* Content Cards */
 .content-card {
     background: white;
     padding: 2rem;
@@ -185,7 +176,6 @@ body {
     text-decoration: none;
 }
 
-/* Footer */
 .site-map {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -211,7 +201,6 @@ body {
     color: #228be6;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .model-selector {
         grid-template-columns: 1fr;
@@ -231,17 +220,10 @@ body {
     }
 }
 
-/* Add these styles to your existing main.css */
-
-/* ====================
-   Section Enhancements
-   ==================== */
 .content-section {
     padding-top: 6rem;
-    /* Account for fixed navbar */
 }
 
-/* About Section */
 #about .content-card {
     background: linear-gradient(135deg, #2d3436 0%, #000000 100%);
     color: white;
@@ -257,7 +239,7 @@ body {
 }
 
 .tech-stack {
-    margin-top: 2rem; /* Added spacing */
+    margin-top: 2rem;
     position: relative;
     padding: 2rem;
     background: rgba(255, 255, 255, 0.05);
@@ -283,12 +265,10 @@ body {
     color: #00b4d8;
 }
 
-/* Originality Section */
-/* In #originality .content-card */
 #originality .content-card {
-    background: rgba(0, 180, 216, 0.1);  /* Increased opacity */
+    background: rgba(0, 180, 216, 0.1);
     border: 1px solid rgba(0, 180, 216, 0.3);
-    color: #ffffff; /* Explicit white text */
+    color: #ffffff;
     backdrop-filter: blur(10px);
 }
 
@@ -326,7 +306,6 @@ body {
     left: 0;
 }
 
-/* References Section */
 #references .content-card {
     background: #0a1929;
     color: white;
@@ -367,7 +346,6 @@ body {
     font-size: 0.9rem;
 }
 
-/* Footer Enhancements */
 .site-map {
     background: #0a1929;
     padding: 4rem 5%;
@@ -389,7 +367,6 @@ body {
     color: #00b4d8;
 }
 
-/* Responsive Improvements */
 @media (max-width: 768px) {
     .content-section {
         padding: 4rem 5%;
@@ -410,7 +387,7 @@ body {
 .brand-header {
   text-align: center;
   padding: 2rem 1rem;
-  background-color: black /* Deep soda green */
+  background-color: black;
   color: #fff;
 }
 
@@ -424,13 +401,12 @@ body {
 
 .brand-tagline {
   font-size: 1.2rem;
-  color: #228be6; /* Lemon-lime accent */
+  color: #228be6;
   margin-top: 0.5rem;
   font-weight: 400;
   letter-spacing: 1px;
 }
 
-/* Folder Structure Styles */
 .folder-structure {
     margin-top: 2.5rem;
     padding: 1.5rem;
