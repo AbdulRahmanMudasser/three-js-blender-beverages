@@ -1,0 +1,116 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Beverage Viewer</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="brand">
+            <h1>POP & ROLL</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#originality" class="nav-link">Originality</a>
+            <a href="#references" class="nav-link">References</a>
+        </div>
+    </nav>
+
+    <br><br><br><br><br>
+
+    <!-- Content Sections -->
+    <section id="home" class="content-section active">
+        <div class="model-selector">
+            <button class="model-btn active" data-model="model1">DIET SODA</button>
+            <button class="model-btn" data-model="model2">ORIGINAL SODA</button>
+            <button class="model-btn" data-model="model3">LIMITED EDITION</button>
+        </div>
+        <div id="canvas-container"></div>
+        <div class="controls">
+            <button class="control-btn" onclick="toggleWireframe()">📐 Wireframe</button>
+            <button class="control-btn" onclick="toggleRotation()">🔄 Rotate</button>
+        </div>
+    </section>
+
+    <section id="about" class="content-section">
+        <div class="content-card">
+            <h2>About This Project</h2>
+            <p>A cutting-edge 3D visualization platform demonstrating...</p>
+            <div class="tech-stack">
+                <h3>Technologies Used:</h3>
+                <ul>
+                    <li>Three.js - WebGL framework</li>
+                    <li>Blender - 3D modeling</li>
+                    <li>GLTF format - 3D asset delivery</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="originality" class="content-section">
+        <div class="content-card">
+            <h2>Statement of Originality</h2>
+            <p>This work represents original implementation of:</p>
+            <ul>
+                <li>Custom 3D models created in Blender</li>
+                <li>Original WebGL implementation</li>
+                <li>Unique UI/UX design system</li>
+            </ul>
+            <h3>Acknowledgements</h3>
+            <ul>
+                <li>Three.js documentation</li>
+                <li>Blender Foundation</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="references" class="content-section">
+        <div class="content-card">
+            <h2>References & Resources</h2>
+            <div class="reference-links">
+                <a href="https://threejs.org" target="_blank" rel="noopener">Three.js Documentation</a>
+                <a href="https://github.com/your-repo" target="_blank" rel="noopener">GitHub Repository</a>
+                <a href="https://blender.org" target="_blank" rel="noopener">Blender Foundation</a>
+            </div>
+            <h3>Third-Party Assets</h3>
+            <ul class="asset-list">
+                <li>Environment textures from Poly Haven</li>
+                <li>UI icons from Feather Icons</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Site Map Footer -->
+    <footer class="site-map">
+        <div class="footer-section">
+            <h4>Navigation</h4>
+            <a href="#home">3D Viewer</a>
+            <a href="#about">About</a>
+            <a href="#originality">Originality</a>
+        </div>
+        <div class="footer-section">
+            <h4>Resources</h4>
+            <a href="#references">References</a>
+            <a href="/docs">Documentation</a>
+            <a href="/license">License</a>
+        </div>
+        <div class="footer-section">
+            <h4>Connect</h4>
+            <a href="https://github.com/your-repo">GitHub</a>
+            <a href="mailto:contact@example.com">Contact</a>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/navigation.js"></script>
+</body>
+</html>
